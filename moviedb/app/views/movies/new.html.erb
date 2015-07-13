@@ -1,20 +1,25 @@
-<h1>Add a new Movie</h1>
+<div class="panel-heading">
+        <h1 class= "panel-title">Add a new Movie</h1>
+</div>
+<div class="panel-body">
 <%= form_for @movie do |f| %>
     <p>
             <%= f.label :title %>
-            <%= f.text_field :title %>
+            <%= f.text_field :title, :class => 'form-control'%>
     </p>
     <p>
         <%= f.label :year %>
-        <%= f.text_field :year %>
+        <%= f.text_field :year, :class => 'form-control'%>
     </p>
     <p>
         <%= f.label :rating %>
-        <%= f.text_field :rating %>
+        <%= f.text_field :rating, :class => 'form-control'%>
+    </p>
     </p>
     <p>
         <%= f.label :description %>
-        <%= f.text_field :description%>
+        <%= f.text_field :description, :class=> 'form-control'%>
+    </p>
     </p>
     <p>
         <%= f.submit%>
